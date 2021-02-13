@@ -1,2 +1,8 @@
 ---
-# defaults file for httpd_initial
+- user_name: example
+- domain_name: example.org
+- domain_alias: www.example.org
+- sysadmin_email: info@example.org
+- letsencrypt: false
+- modsecurity: false
+- cloudflare: false
