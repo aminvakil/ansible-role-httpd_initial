@@ -39,8 +39,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        include:
-          - distro: debian10
+        letsencrypt: [false, true]
+        distro: debian10
 
     steps:
       - name: Check out the codebase.

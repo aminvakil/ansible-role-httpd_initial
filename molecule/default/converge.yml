@@ -1,5 +1,7 @@
 ---
 - name: Converge
   hosts: all
+  vars:
+    letsencrypt: ${LETSENCRYPT}
   roles:
     - role: aminvakil.httpd_initial

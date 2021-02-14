@@ -52,3 +52,7 @@
   file:
     path: /etc/apache2/sites-enabled/000-default.conf
     state: absent
+
+- name: Include letsencrypt configurations
+  include_tasks: letsencrypt.yml
+  when: letsencrypt | bool
