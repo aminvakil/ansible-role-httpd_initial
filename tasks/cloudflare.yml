@@ -5,3 +5,11 @@
     dest: /etc/apache2/conf-available/cf.conf
     mode: '0600'
   notify: restart apache2
+
+- name: Enable configurations
+  file:
+    src: /etc/apache2/conf-available/{{ item }}.conf
+    dest: /etc/apache2/conf-enabled/{{ item }}.conf
+    state: link
+  loop:
+    - cf

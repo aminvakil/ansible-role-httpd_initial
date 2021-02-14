@@ -19,3 +19,12 @@
     src: templates/etc/apache2/conf-available/md.conf.j2
     dest: /etc/apache2/conf-available/md.conf
     mode: '0600'
+
+- name: Enable configurations
+  file:
+    src: /etc/apache2/conf-available/{{ item }}.conf
+    dest: /etc/apache2/conf-enabled/{{ item }}.conf
+    state: link
+  loop:
+    - ssl
+    - md
