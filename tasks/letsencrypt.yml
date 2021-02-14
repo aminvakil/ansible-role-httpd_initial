@@ -6,6 +6,7 @@
   loop:
     - ssl
     - md
+  notify: restart apache2
 
 - name: Create Apache conf for SSL
   template:
