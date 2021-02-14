@@ -56,3 +56,7 @@
 - name: Include letsencrypt configurations
   include_tasks: letsencrypt.yml
   when: letsencrypt | bool
+
+- name: Include cloudflare configurations
+  include_tasks: cloudflare.yml
+  when: cloudflare | bool

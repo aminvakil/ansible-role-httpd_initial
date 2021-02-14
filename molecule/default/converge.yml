@@ -3,5 +3,6 @@
   hosts: all
   vars:
     letsencrypt: "{{ lookup('env', 'LETSENCRYPT') }}"
+    cloudflare: "{{ lookup('env', 'CLOUDFLARE') }}"
   roles:
     - role: aminvakil.httpd_initial

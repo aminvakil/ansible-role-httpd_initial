@@ -40,6 +40,7 @@ jobs:
     strategy:
       matrix:
         letsencrypt: [false, true]
+        cloudflare: [false, true]
         distro: [debian10]
 
     steps:
@@ -63,6 +64,7 @@ jobs:
           ANSIBLE_FORCE_COLOR: '1'
           MOLECULE_DISTRO: ${{ matrix.distro }}
           LETSENCRYPT: ${{ matrix.letsencrypt }}
+          CLOUDFLARE: ${{ matrix.cloudflare }}
 
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
