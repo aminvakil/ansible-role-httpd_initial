@@ -10,6 +10,11 @@ None.
 
 Role Variables
 --------------
+`sysadmin_email`: your-email (default=info@example.org)
+
+`letsencrypt`: false/true (default=false)
+
+`cloudflare`: false/true (default=false)
 
 Dependencies
 ------------
