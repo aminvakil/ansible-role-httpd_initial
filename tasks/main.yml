@@ -52,8 +52,3 @@
   file:
     path: /etc/apache2/sites-enabled/000-default.conf
     state: absent
-
-- name: Restart apache2
-  systemd:
-    name: apache2
-    state: restarted
