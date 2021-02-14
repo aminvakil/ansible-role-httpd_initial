@@ -2,6 +2,6 @@
 - name: Converge
   hosts: all
   vars:
-    letsencrypt: ${LETSENCRYPT}
+    letsencrypt: "{{ lookup('env', 'LETSENCRYPT') }}"
   roles:
     - role: aminvakil.httpd_initial
