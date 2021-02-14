@@ -1,7 +1,4 @@
 ---
-- name: Create User.
-  include_tasks: user.yml
-
 - name: Install apache2
   apt:
     name: apache2
