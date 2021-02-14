@@ -19,16 +19,16 @@
     dest: /etc/apache2/apache2.conf
     mode: '0600'
 
+- name: Enable headers module
+  community.general.apache2_module:
+    name: headers
+    state: present
+
 - name: Edit Apache security configuration
   template:
     src: templates/etc/apache2/conf-available/security.conf.j2
     dest: /etc/apache2/conf-available/security.conf
     mode: '0600'
-
-- name: Enable headers module
-  community.general.apache2_module:
-    name: headers
-    state: present
 
 - name: Change permissions of apache2 folders
   file:
