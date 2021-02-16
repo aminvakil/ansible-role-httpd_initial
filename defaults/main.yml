@@ -1,5 +1,4 @@
 ---
-user_name: example
 sysadmin_email: info@example.org
 letsencrypt: false
 cloudflare: false
