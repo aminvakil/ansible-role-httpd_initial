@@ -43,6 +43,7 @@ jobs:
       matrix:
         https: [false, true]
         cloudflare: [false, true]
+        staging: [false, true]
         distro: [debian10]
 
     steps:
@@ -67,6 +68,7 @@ jobs:
           MOLECULE_DISTRO: ${{ matrix.distro }}
           HTTPS: ${{ matrix.https }}
           CLOUDFLARE: ${{ matrix.cloudflare }}
+          STAGING: ${{ matrix.staging }}
 
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'

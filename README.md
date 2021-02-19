@@ -16,6 +16,8 @@ Role Variables
 
 `cloudflare`: false/true (default=false)
 
+`staging`: false/true (default=true)
+
 Dependencies
 ------------
 
