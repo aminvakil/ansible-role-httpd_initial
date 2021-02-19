@@ -2,7 +2,7 @@
 - name: Converge
   hosts: all
   vars:
-    letsencrypt: "{{ lookup('env', 'LETSENCRYPT') }}"
+    https: "{{ lookup('env', 'HTTPS') }}"
     cloudflare: "{{ lookup('env', 'CLOUDFLARE') }}"
   roles:
     - role: aminvakil.httpd_initial

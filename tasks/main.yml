@@ -50,9 +50,9 @@
     path: /etc/apache2/sites-enabled/000-default.conf
     state: absent
 
-- name: Include letsencrypt configurations
-  include_tasks: letsencrypt.yml
-  when: letsencrypt | bool
+- name: Include https configurations
+  include_tasks: https.yml
+  when: https | bool
 
 - name: Include cloudflare configurations
   include_tasks: cloudflare.yml

@@ -1,4 +1,4 @@
 ---
 sysadmin_email: info@example.org
-letsencrypt: false
+https: false
 cloudflare: false
