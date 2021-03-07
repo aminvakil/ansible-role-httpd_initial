@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  author: Amin Vakil
+  author: aminvakil
   role_name: httpd_initial
   description: Installs and Configures Apache HTTPD on Debian Buster
   license: GPL-3.0-only
