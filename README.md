@@ -1,3 +1,4 @@
+# Use https://github.com/aminvakil/lamp instead.
 Role Name
 =========
 
